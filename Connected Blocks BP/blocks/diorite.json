@@ -1,0 +1,1545 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "zinitex:connected_diorite",
+            "properties": {
+                "pos:x": [0, 1],
+                "pos:nx": [0, 1],
+
+                "pos:z": [0, 1],
+                "pos:nz": [0, 1],
+
+                "pos1:xz": [0, 1],
+                "pos1:nxz": [0, 1],
+                "pos1:nxnz": [0, 1],
+                "pos1:xnz": [0, 1]
+            }
+        },
+        "components": {
+            "tag:diorite": {},
+            "minecraft:creative_category": {
+                "category": "construction"
+            },
+            "minecraft:unit_cube": {},
+            "minecraft:destroy_time": 0.45,
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [0,
+                    0
+                ],
+                "on_tick": {
+                    "event": "change"
+                }
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "diorite_0"
+                }
+            },
+            "minecraft:on_placed": { "event": "change" }
+        },
+        "permutations": [{
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_1"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_1n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_1a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_1o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_3"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_4"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_5"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_8"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_8n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_9"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_9n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_10"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_10n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_11"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_11n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_12"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_12a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_12o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_12n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_13"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_13n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_13a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_13o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_14"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_14n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_14a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_14o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_15"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_15n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_15a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_15o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_16"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_17"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_18"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_19"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_20"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_22"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_21"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_23"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_24"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_25"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_26"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "up": {
+                            "texture": "diorite_27"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_1"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_1n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_1o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_1a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_3"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_4"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_5"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_9"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_9n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_8"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_8n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_11"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_11n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_10"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_10n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_14"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_14o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_14a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_14n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_13"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_13n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_13o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_13a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_12"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_12n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_12o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_12a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_15"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_15n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_15o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_15a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_19"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_18"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_17"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_16"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_20"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_22"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_23"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_21"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_25"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_24"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_27"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "down": {
+                            "texture": "diorite_26"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "east": {
+                            "texture": "diorite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "east": {
+                            "texture": "diorite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "east": {
+                            "texture": "diorite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:z') == 0 && q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "south": {
+                            "texture": "diorite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:z') == 0 && q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "south": {
+                            "texture": "diorite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:z') == 0 && q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "south": {
+                            "texture": "diorite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nz') == 0 && q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "north": {
+                            "texture": "diorite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nz') == 0 && q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "north": {
+                            "texture": "diorite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nz') == 0 && q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "north": {
+                            "texture": "diorite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "west": {
+                            "texture": "diorite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "west": {
+                            "texture": "diorite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:diorite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "diorite_0"
+                        },
+                        "west": {
+                            "texture": "diorite_7"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "change": {
+                "sequence": [{
+                        "set_block_property": {
+                            "pos:x": "q.block_neighbor_has_any_tag(1,0,0,'diorite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos:nx": "q.block_neighbor_has_any_tag(-1,0,0,'diorite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos:z": "q.block_neighbor_has_any_tag(0,0,1,'diorite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos:nz": "q.block_neighbor_has_any_tag(0,0,-1,'diorite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos1:xz": "q.block_neighbor_has_any_tag(1,0,1,'diorite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos1:nxz": "q.block_neighbor_has_any_tag(-1,0,1,'diorite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos1:nxnz": "q.block_neighbor_has_any_tag(-1,0,-1,'diorite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos1:xnz": "q.block_neighbor_has_any_tag(1,0,-1,'diorite')"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

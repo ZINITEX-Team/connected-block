@@ -1,0 +1,1545 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "zinitex:connected_granite",
+            "properties": {
+                "pos:x": [0, 1],
+                "pos:nx": [0, 1],
+
+                "pos:z": [0, 1],
+                "pos:nz": [0, 1],
+
+                "pos1:xz": [0, 1],
+                "pos1:nxz": [0, 1],
+                "pos1:nxnz": [0, 1],
+                "pos1:xnz": [0, 1]
+            }
+        },
+        "components": {
+            "tag:granite": {},
+            "minecraft:creative_category": {
+                "category": "construction"
+            },
+            "minecraft:unit_cube": {},
+            "minecraft:destroy_time": 0.45,
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [0,
+                    0
+                ],
+                "on_tick": {
+                    "event": "change"
+                }
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "granite_0"
+                }
+            },
+            "minecraft:on_placed": { "event": "change" }
+        },
+        "permutations": [{
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_1"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_1n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_1a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_1o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_3"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_4"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_5"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_8"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_8n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_9"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_9n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_10"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_10n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_11"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_11n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_12"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_12a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_12o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_12n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_13"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_13n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_13a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_13o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_14"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_14n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_14a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_14o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_15"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_15n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_15a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_15o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_16"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_17"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_18"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_19"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_20"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_22"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_21"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_23"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_24"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_25"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_26"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "up": {
+                            "texture": "granite_27"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_1"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_1n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_1o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_1a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_3"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_4"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_5"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_9"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_9n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_8"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_8n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_11"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_11n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_10"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_10n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_14"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:nxz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_14o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_14a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:nxz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_14n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_13"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_13n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_13o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_13a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_12"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_12n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_12o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xnz') == 1 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_12a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_15"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_15n"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:xz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_15o"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:xz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_15a"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_19"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_18"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_17"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_16"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_20"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_22"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_23"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_21"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 0 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_25"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 0 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_24"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 0 && q.block_property('pos1:xnz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_27"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1 && q.block_property('pos1:xz') == 1 && q.block_property('pos1:nxz') == 1 && q.block_property('pos1:nxnz') == 1 && q.block_property('pos1:xnz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "down": {
+                            "texture": "granite_26"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "east": {
+                            "texture": "granite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "east": {
+                            "texture": "granite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:x') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "east": {
+                            "texture": "granite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:z') == 0 && q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "south": {
+                            "texture": "granite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:z') == 0 && q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "south": {
+                            "texture": "granite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:z') == 0 && q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "south": {
+                            "texture": "granite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nz') == 0 && q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "north": {
+                            "texture": "granite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nz') == 0 && q.block_property('pos:x') == 1 && q.block_property('pos:nx') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "north": {
+                            "texture": "granite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nz') == 0 && q.block_property('pos:x') == 0 && q.block_property('pos:nx') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "north": {
+                            "texture": "granite_7"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "west": {
+                            "texture": "granite_2"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 0 && q.block_property('pos:nz') == 1",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "west": {
+                            "texture": "granite_6"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('pos:nx') == 0 && q.block_property('pos:z') == 1 && q.block_property('pos:nz') == 0",
+                "components": {
+                    "tag:granite": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "granite_0"
+                        },
+                        "west": {
+                            "texture": "granite_7"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "change": {
+                "sequence": [{
+                        "set_block_property": {
+                            "pos:x": "q.block_neighbor_has_any_tag(1,0,0,'granite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos:nx": "q.block_neighbor_has_any_tag(-1,0,0,'granite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos:z": "q.block_neighbor_has_any_tag(0,0,1,'granite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos:nz": "q.block_neighbor_has_any_tag(0,0,-1,'granite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos1:xz": "q.block_neighbor_has_any_tag(1,0,1,'granite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos1:nxz": "q.block_neighbor_has_any_tag(-1,0,1,'granite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos1:nxnz": "q.block_neighbor_has_any_tag(-1,0,-1,'granite')"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "pos1:xnz": "q.block_neighbor_has_any_tag(1,0,-1,'granite')"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

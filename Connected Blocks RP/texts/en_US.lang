@@ -1,0 +1,6 @@
+pack.name=Connected Blocks RP
+pack.description=Created By §bZINITEX
+
+tile.zinitex:connected_andesite.name=Connected Andesite
+tile.zinitex:connected_granite.name=Connected Granite
+tile.zinitex:connected_diorite.name=Connected Diorite
